@@ -20,17 +20,24 @@ class SearchTerm:
     
     additional_filters: Dict[str, Any]
 
-#
+#წამოიღოს ყველა
 def get_all(request):
     pass
-
+#წამოიღოს კონკრეტული მანქანა ID-ით
 def get(request, car_id):
     pass
 
+#წამოიღოს კონკრეტლი მწარმოებელის მანქანები
 def get_by_make(request, make):
     pass
 
+#წამოიღოს მანქანები ფასის range-ში (წამოიღოს მხოლოდ მანქანის მოდელის და მწარმოებელი)
 def get_by_price_range(request, min_price, max_price):
+    pass
+
+#წამოიღოს მანქანების მოდელების სახელები (მხოლოდ სახელები ტუპლი არა) რაღაც ფასსზე ნაკლები
+#ან (ფასი გაყოფილი 500) ზე stock ზე ნაკლები
+def get_by_price_less_or_stock_less_then_price(request, search_term:SearchTerm):
     pass
 
 #ეს მერე ვქნათ
